@@ -30,6 +30,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
 app.use(async (req, res, next) => {
+  // CORS headers for local development, as backend repo running on port 3010 - see bin/www
   if (req.headers.origin === "http://localhost:3000") {
     console.log("ORIGIN ", req.headers.origin);
     res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000");
@@ -54,7 +55,7 @@ app.use(async (req, res, next) => {
   }
 });
 
-// SETUP ROUTES
+// Setup routes from routes folder
 var routesFolder = path.resolve(__dirname + "/routes");
 const glob = require("glob");
 glob.sync("**/*.js", { cwd: routesFolder }).map((filename) => {
@@ -65,7 +66,7 @@ glob.sync("**/*.js", { cwd: routesFolder }).map((filename) => {
   } else {
     middleware = "/" + middleware + "/";
     app.use(middleware, require(routesFolder + "/" + filename));
-    // console.log("API Routes: " + middleware);
+    console.log("API Routes: " + middleware);
   }
 });
 
