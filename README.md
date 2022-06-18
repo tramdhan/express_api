@@ -3,7 +3,7 @@
 Boilerplate Backend App
 
 This app is built using -
-[express-generator](https://github.com/expressjs/generator).
+[express-generator](https://github.com/expressjs/generator),
 [sequelize ORM](https://github.com/sequelize/sequelize).
 
 ### Installation
