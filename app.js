@@ -11,7 +11,7 @@ var fs = require("fs");
 var envpath = "";
 
 if (fs.existsSync("/var/www")) {
-  envpath = "/var/config/.env"; // common env on server, serving multiple apps
+  envpath = "/var/config/.env"; // common env on server for shared apps
 } else {
   envpath = "./var/config/.env"; // local
 }

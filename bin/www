@@ -7,6 +7,12 @@
 var app = require("../app");
 var debug = require("debug")("myapp:server");
 var http = require("http");
+const Airbrake = require("@airbrake/node");
+
+new Airbrake.Notifier({
+  projectId: process.env.AIRBRAKE_PROJECT_ID,
+  projectKey: process.env.AIRBRAKE_PROJECT_KEY,
+});
 
 /**
  * Get port from environment and store in Express.
@@ -19,7 +25,13 @@ app.set("port", port);
  * Create HTTP server.
  */
 
-var server = http.createServer(app);
+// var server = http.createServer(app);
+const server = http.createServer((_req, res) => {
+  res.statusCode = 200;
+  res.setHeader("Content-Type", "text/plain");
+  res.end("Hello World");
+  throw new Error("I am an uncaught exception");
+});
 
 /**
  * Listen on provided port, on all network interfaces.

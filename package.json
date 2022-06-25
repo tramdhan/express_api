@@ -6,12 +6,14 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
+    "@airbrake/browser": "^2.1.7",
+    "@airbrake/node": "^2.1.7",
     "cookie-parser": "~1.4.4",
     "debug": "~4.3.4",
     "express": "~4.18.1",
     "helmet": "^5.1.0",
     "http-errors": "~2.0.0",
-    "jade": "~1.11.0",
+    "jade": "^1.11.0",
     "lodash": "^4.17.21",
     "module-alias": "^2.2.2",
     "morgan": "~1.10.0",
@@ -22,6 +24,7 @@
     "@": "."
   },
   "devDependencies": {
-    "nodemon": "^2.0.16"
+    "nodemon": "^2.0.18",
+    "transformers": "^3.1.0"
   }
 }
