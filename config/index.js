@@ -19,5 +19,11 @@ module.exports = {
   },
 
   //https://github.com/eleith/emailjs#emailserverconnectoptions
-  mail: {},
+  mail: {
+    host: "localhost",
+    port: process.env.SMTP_PORT, // e.g.: localhost = 25, prod = 587
+    tls: process.env.SMTP_TLS, // e.g.: localhost = false, prod = true
+    user: process.env.SMTP_EMAIL,
+    pass: process.env.SMTP_PWORD,
+  },
 };
