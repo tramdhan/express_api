@@ -26,4 +26,10 @@ module.exports = {
     user: process.env.SMTP_EMAIL,
     pass: process.env.SMTP_PWORD,
   },
+
+  mailTemplate: {
+    start:
+      "<html><div style='font-size: 14px; margin-left: 50px; margin-right: 50px; padding-left: 15px; padding-right: 15px; padding-bottom: 15px; border-style: solid; border-width: 1px; border-color: 'gray';><br /><br />",
+    end: "</div></div></html>",
+  },
 };
