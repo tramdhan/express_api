@@ -20,13 +20,13 @@
     "morgan": "~1.10.0",
     "multer": "1.4.4",
     "mysql2": "^2.3.3",
-    "sequelize": "^6.21.1"
+    "sequelize": "^6.21.3"
   },
   "_moduleAliases": {
     "@": "."
   },
   "devDependencies": {
-    "nodemon": "^2.0.18",
+    "nodemon": "^2.0.19",
     "transformers": "^3.1.0"
   }
 }
