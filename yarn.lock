@@ -14,6 +14,18 @@
     promise-polyfill "^8.1.3"
     tdigest "^0.1.1"
 
+"@airbrake/browser@^2.1.8":
+  version "2.1.8"
+  resolved "https://registry.yarnpkg.com/@airbrake/browser/-/browser-2.1.8.tgz#809001e528f8d4e3cb8fc8648ac6fdfb98ad0bda"
+  integrity sha512-3xzpkQUq48R+hVbGlxUFLnv8dZg7M9OhBceX473ZrX4osxgfuKRqB+ecNawevKOftBrsjK2gNBayCXTbE+yFzQ==
+  dependencies:
+    "@types/promise-polyfill" "^6.0.3"
+    "@types/request" "2.48.8"
+    cross-fetch "^3.1.5"
+    error-stack-parser "^2.0.4"
+    promise-polyfill "^8.1.3"
+    tdigest "^0.1.1"
+
 "@airbrake/node@^2.1.7":
   version "2.1.7"
   resolved "https://registry.yarnpkg.com/@airbrake/node/-/node-2.1.7.tgz#e68232a22604cb20f51071e283df44468b5b2a2d"
@@ -55,6 +67,16 @@
   version "2.48.7"
   resolved "https://registry.yarnpkg.com/@types/request/-/request-2.48.7.tgz#a962d11a26e0d71d9a9913d96bb806dc4d4c2f19"
   integrity sha512-GWP9AZW7foLd4YQxyFZDBepl0lPsWLMEXDZUjQ/c1gqVPDPECrRZyEzuhJdnPWioFCq3Tv0qoGpMD6U+ygd4ZA==
+  dependencies:
+    "@types/caseless" "*"
+    "@types/node" "*"
+    "@types/tough-cookie" "*"
+    form-data "^2.5.0"
+
+"@types/request@2.48.8":
+  version "2.48.8"
+  resolved "https://registry.yarnpkg.com/@types/request/-/request-2.48.8.tgz#0b90fde3b655ab50976cb8c5ac00faca22f5a82c"
+  integrity sha512-whjk1EDJPcAR2kYHRbFl/lKeeKYTi05A15K9bnLInCVroNDCtXce57xKdI0/rQaA3K+6q0eFyUBPmqfSndUZdQ==
   dependencies:
     "@types/caseless" "*"
     "@types/node" "*"
@@ -355,7 +377,7 @@ core-util-is@~1.0.0:
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.3.tgz#a6042d3634c2b27e9328f837b965fac83808db85"
   integrity sha512-ZQBvi1DcpJ4GDqanjucZ2Hj3wEO5pZDS89BWbkcrvdxksJorwUDDZamX9ldFkp9aw2lmBDLgkObEA4DWNJ9FYQ==
 
-cross-fetch@^3.0.4:
+cross-fetch@^3.0.4, cross-fetch@^3.1.5:
   version "3.1.5"
   resolved "https://registry.yarnpkg.com/cross-fetch/-/cross-fetch-3.1.5.tgz#e1389f44d9e7ba767907f7af8454787952ab534f"
   integrity sha512-lvb1SBsI0Z7GDwmuid+mU3kWVBwTVUbe7S0H52yaaAdQOXq2YktTCZdlAcNKFzE6QtRz0snpw9bNiPeOIkkQvw==

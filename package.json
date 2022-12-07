@@ -6,7 +6,7 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
-    "@airbrake/browser": "^2.1.7",
+    "@airbrake/browser": "^2.1.8",
     "@airbrake/node": "^2.1.7",
     "cookie-parser": "~1.4.4",
     "debug": "~4.3.4",
