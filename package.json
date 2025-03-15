@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "@airbrake/browser": "^2.1.9",
-    "@airbrake/node": "^2.1.8",
+    "@airbrake/node": "^2.1.9",
     "cookie-parser": "~1.4.7",
     "debug": "~4.3.7",
     "emailjs": "3.8.1",
