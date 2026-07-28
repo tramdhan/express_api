@@ -971,10 +971,10 @@ multer@2.2.0:
     concat-stream "^2.0.0"
     type-is "^1.6.18"
 
-mysql2@^3.23.0:
-  version "3.23.0"
-  resolved "https://registry.yarnpkg.com/mysql2/-/mysql2-3.23.0.tgz#cf606d217ebd2771a29e1e8677e3f0b5ad5afe6d"
-  integrity sha512-ZwyGLoG9BRlL7hKNDcIy7q18hA6WTWGEpLAerGHXj5Xahemia4msZdwjIOUIzesjK3B5z5gWLktf+2tYSLAyTA==
+mysql2@^3.23.2:
+  version "3.23.2"
+  resolved "https://registry.yarnpkg.com/mysql2/-/mysql2-3.23.2.tgz#30d108672482fee8f0a467886991134f0befa011"
+  integrity sha512-fxh3HpQ8vJtu/Mmnd4Xsur19jGjHGzRLMxptiDtOkbX7EVBgnafGSGDx1WGGVmJLClVh2LeeBMMo24IFv8wCyQ==
   dependencies:
     aws-ssl-profiles "^1.1.2"
     denque "^2.1.0"
