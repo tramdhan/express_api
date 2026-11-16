@@ -16,7 +16,7 @@
     "http-errors": "~2.0.1",
     "jade": "^1.11.0",
     "lodash": "^4.18.1",
-    "module-alias": "^2.3.4",
+    "module-alias": "^2.3.5",
     "morgan": "~1.12.1",
     "multer": "2.5.0",
     "mysql2": "^3.24.6",
